@@ -120,7 +120,7 @@ def get_color(number):
     return red, blue, green
 
 
-def plot_points(image, points, radius=3, color=(255,255,255)):
+def plot_points(image, points, radius=3, color=(0,0,255)):
     for x,y in points:
         cv2.circle(image, (int(x), int(y)), radius, color, thickness=-1)
 
