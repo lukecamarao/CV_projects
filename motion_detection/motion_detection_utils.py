@@ -113,8 +113,8 @@ def draw_bboxes(frame, detections):
 def get_color(number):
     """ Converts an integer number to a color """
     # change these however you want to
-    blue = int(number*30 % 256)
-    green = int(number*103 % 256)
+    blue = int(number*50 % 256)
+    green = int(number*50 % 256)
     red = int(number*50 % 256)
 
     return red, blue, green
