@@ -107,7 +107,7 @@ def non_max_suppression(boxes, scores, threshold=1e-1):
 def draw_bboxes(frame, detections):
     for det in detections:
         x1,y1,x2,y2 = det
-        cv2.rectangle(frame, (x1,y1), (x2,y2), (0,0,255), 3)
+        cv2.rectangle(frame, (x1,y1), (x2,y2), (255,255,255), 3)
 
 
 def get_color(number):
@@ -120,7 +120,7 @@ def get_color(number):
     return red, blue, green
 
 
-def plot_points(image, points, radius=3, color=(0,255,0)):
+def plot_points(image, points, radius=3, color=(255,255,255)):
     for x,y in points:
         cv2.circle(image, (int(x), int(y)), radius, color, thickness=-1)
 
